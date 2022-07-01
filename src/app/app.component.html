@@ -8,8 +8,8 @@
     >
   </label>
   <div *ngIf="emailValidation.controls['email'].errors">
-    <div *ngIf="emailValidation.controls['email'].errors?.['emailValidator']">
-      {{emailValidation.controls['email'].errors?.['emailValidator'].rules}}
+    <div *ngIf="emailValidation.controls['email'].errors?.['email']">
+      {{emailValidation.controls['email'].errors?.['email']?.rules}}
     </div>
   </div>
   <button
